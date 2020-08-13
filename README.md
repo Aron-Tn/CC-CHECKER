@@ -15,7 +15,7 @@ Installation :
 - Automatically 
 
                   git clone https://github.com/aron-tn/CC-Checker.git && cd CC-Checker
-                  python3 checker.py
+                  python3 Checker.py
          
 - Manually
 
@@ -26,7 +26,7 @@ Installation :
    - Installing Go 
    
                git clone https://github.com/aron-tn/CC-Checker.git && cd CC-Checker
-               python3 checker.py
+               python3 Checker.py
                
 Support me :
 ------
