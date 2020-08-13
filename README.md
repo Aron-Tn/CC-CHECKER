@@ -15,11 +15,10 @@ Installation :
 
  - Installing requirments
    
-               python3 python3-pip python3-requests python3-json python3-urllib3 
+               pip3 install -r requirements.txt
     
- - Installing Go 
+ - How To Use ?
    
-               git clone https://github.com/aron-tn/CC-Checker.git && cd CC-Checker
                python3 Checker.py
                
 Support me :
