@@ -1,0 +1,4 @@
+requests
+json
+uuid
+urllib3
