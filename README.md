@@ -1,4 +1,4 @@
-## CC ( credit card ) Checker ⚠️
+## CC ( credit card ) Checker V1 ⚠️
 
 
 
