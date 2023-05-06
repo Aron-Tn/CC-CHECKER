@@ -15,7 +15,7 @@ Installation :
 
  - Installing requirments
    
-               pip3 install -r requirements.txt
+               pip3 install -r requirments.txt
     
  - How To Use ?
    
